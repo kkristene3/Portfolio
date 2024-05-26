@@ -1,5 +1,5 @@
 /* Colour Scheme Variables */
-:root {
+:root{
     --rich-black: #01161eff;
     --midnight-green: #124559ff;
     --air-force-blue: #598392ff;
@@ -9,8 +9,45 @@
 
 body{
     background-color: var(--air-force-blue);
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
 }
 
 h1{
     color: var(--rich-black);
+    font-weight: 400;
+    font-size: 2.5em;
+    /*font-size: xx-large;*/
+}
+
+a{
+    color: var(--beige);
+    text-decoration: none;
+    font-size: 1.5em;
+    /*font-size: x-large;*/
+}
+
+/* Class Containers */
+.pfp{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-text{
+    width: max-content;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    font-family: Outfit;
+}
+
+.content-nav{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 30px;
 }
