@@ -11,6 +11,9 @@
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5px;
     justify-content: space-between;
     font-family: Outfit;
     letter-spacing: 0.05em;
