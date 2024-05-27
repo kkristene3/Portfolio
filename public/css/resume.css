@@ -7,6 +7,7 @@
     --beige: #eff6e0ff;
 }
 
+/*navigation buttons*/
 .nav-buttons{
     margin-left: 10px;
     margin-right: 10px;
@@ -15,9 +16,21 @@
     position: sticky;
     top: 5px;
     justify-content: space-between;
+}
+
+.zoom-button{
     font-family: Outfit;
     letter-spacing: 0.05em;
     font-size: 1.5em;
+    color: var(--midnight-green);
+    text-decoration: underline 0.1em #ffffff;
+
+}
+
+.zoom-button:hover{
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out 0.05s text-decoration-color 300ms;
+    text-decoration-color: var(--midnight-green);
 }
 
 /*Get page resume look*/
