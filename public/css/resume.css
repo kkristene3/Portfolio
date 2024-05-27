@@ -1,0 +1,9 @@
+/*Get page resume look*/
+div.resume_square{
+    margin-top: 50px;
+    max-width: 1400px;
+    min-width: 500px;
+    height: 3000px;
+    margin-inline: auto;
+    outline: 10px solid black
+}
