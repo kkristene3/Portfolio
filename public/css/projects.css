@@ -1,0 +1,123 @@
+/* Colour Scheme Variables */
+:root {
+    --rich-black: #01161eff;
+    --midnight-green: #124559ff;
+    --air-force-blue: #598392ff;
+    --ash-gray: #aec3b0ff;
+    --beige: #eff6e0ff;
+}
+
+body {
+    font-family: Outfit;
+}
+
+h1 {
+    font-size: 2.8em;
+    letter-spacing: 0.15em;
+    color: var(--ash-gray);
+    text-shadow: 2px 2px 3px var(--air-force-blue);
+}
+
+h3 {
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: var(--midnight-green);
+    text-shadow: 2px 2px 3px var(--ash-gray);
+}
+
+p {
+    text-align: center;
+    font-size: larger;
+    color: var(--rich-black);
+}
+
+/* Navigation buttons */
+.nav-buttons {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5px;
+    justify-content: space-between;
+}
+
+.zoom-button {
+    font-family: Outfit;
+    letter-spacing: 0.05em;
+    font-size: 1.5em;
+    color: var(--midnight-green);
+    text-decoration: underline 0.1em rgba(0, 0, 0, 0);
+}
+
+.zoom-button:hover {
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out 0.05s text-decoration-color 300ms;
+    text-decoration-color: var(--midnight-green);
+}
+
+/* Project 1 Styles */
+#project1 {
+    background-color: var(--beige);
+    padding: 20px;
+}
+
+.project1-imgs {
+    width: 225px;
+}
+
+#project1-main-img {
+    margin-left: 10%;
+}
+
+#project1-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#project1-summary {
+    text-align: center;
+    padding: 50px;
+    align-content: center;
+    flex: 1;
+    min-width: 300px;
+}
+
+#project1-description {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#project1-timeline {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    justify-content: space-evenly;
+}
+
+.project1-timeline-descriptions {
+    max-width: min-content;
+}
+
+/* Project 2 Styles */
+#project2{
+    background-color: var(--air-force-blue);
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+    #project1-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #project1-main-img {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    #project1-summary {
+        padding: 20px;
+    }
+}
