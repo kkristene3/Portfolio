@@ -1,5 +1,5 @@
 /* Colour Scheme Variables */
-:root{
+:root {
     --rich-black: #01161eff;
     --midnight-green: #124559ff;
     --air-force-blue: #598392ff;
@@ -8,17 +8,17 @@
 }
 
 /* Content on Screen */
-body{
+body {
     background-color: var(--air-force-blue);
     position: absolute;
     width: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     overflow: hidden;
 }
 
-h1{
+h1 {
     color: var(--rich-black);
     overflow: hidden;
     white-space: nowrap;
@@ -30,7 +30,7 @@ h1{
     /*font-size: xx-large;*/
 }
 
-a{
+a {
     visibility: hidden;
     color: var(--beige);
     text-decoration: none;
@@ -39,36 +39,39 @@ a{
     animation-fill-mode: forwards;
     letter-spacing: 0.15em;
     font-size: 1.5em;
-    text-decoration: none;
-    /*font-size: x-large;*/
+    position: relative;
 }
 
-a::after{
-    opacity: 1;
-    transform: scale(0);
-    transform-origin: center;
-    text-decoration: relative;
-    text-decoration-color: var(--beige);
+a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--ash-gray);
+    transition: width 0.3s ease, left 0.3s ease 0s;
+    transform: translateX(-50%);
 }
 
-a:hover::after,
-a:focus::after {
-    transform: scale(1);
+a:hover::after {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-a:hover{
+a:hover {
     color: var(--ash-gray);
 }
 
-
 /* Class Containers */
-.pfp{
+.pfp {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.content-text{
+.content-text {
     width: max-content;
     margin: auto;
     margin-top: 50px;
@@ -76,9 +79,9 @@ a:hover{
     font-family: Outfit;
 }
 
-.content-nav{
+.content-nav {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     margin-top: 30px;
 }
 
@@ -96,9 +99,9 @@ a:hover{
 
 /* Display Nav bar after typing finished */
 @keyframes showNav {
-    0% { opacity: 0;}
+    0% { opacity: 0; }
     100% {
         visibility: visible;
-        opacity: 1; 
+        opacity: 1;
     }
 }
