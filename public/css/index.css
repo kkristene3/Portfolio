@@ -39,12 +39,27 @@ a{
     animation-fill-mode: forwards;
     letter-spacing: 0.15em;
     font-size: 1.5em;
+    text-decoration: none;
     /*font-size: x-large;*/
+}
+
+a::after{
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+    text-decoration: relative;
+    text-decoration-color: var(--beige);
+}
+
+a:hover::after,
+a:focus::after {
+    transform: scale(1);
 }
 
 a:hover{
     color: var(--ash-gray);
 }
+
 
 /* Class Containers */
 .pfp{
