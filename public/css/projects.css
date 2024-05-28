@@ -14,8 +14,6 @@ body {
 h1 {
     font-size: 2.8em;
     letter-spacing: 0.15em;
-    color: var(--ash-gray);
-    text-shadow: 2px 2px 3px var(--air-force-blue);
 }
 
 h3 {
@@ -59,11 +57,16 @@ p {
 /* Project 1 Styles */
 #project1 {
     background-color: var(--beige);
-    padding: 20px;
+    padding: 25px;
 }
 
 .project1-imgs {
-    width: 225px;
+    width: 250px;
+}
+
+#project1-title{
+    color: var(--ash-gray);
+    text-shadow: 2px 2px 3px var(--air-force-blue);
 }
 
 #project1-main-img {
@@ -73,6 +76,7 @@ p {
 #project1-main {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 #project1-summary {
@@ -101,9 +105,31 @@ p {
 }
 
 /* Project 2 Styles */
-#project2{
+#project2 {
     background-color: var(--air-force-blue);
+    text-align: center;
 }
+
+#project2-title {
+    text-align: left;
+    color: var(--beige);
+    padding-top: 30px;
+    margin-left: 20px;
+    text-shadow: 2px 2px 3px var(--rich-black);
+}
+
+#project2-summary{
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+#project2-description {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--beige);
+}
+
 
 /* Media Queries for responsive design */
 @media (max-width: 768px) {
