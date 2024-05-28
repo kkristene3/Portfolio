@@ -45,10 +45,11 @@
 }
 
 #resume-leftsquare{
-    max-width: 30%;
+    max-width: 35%;
     min-width: 5%;
     height: 3000px;
     background-color: var(--beige);
+    padding: 1em;
 }
 
 /*Resume contents*/
@@ -72,5 +73,19 @@ h2.left-text{
     color: var(--rich-black);
     padding-top: 10px;
     margin: 0;
+}
+
+ul.left-side-list{
+    padding-right: 2em;
+}
+
+ul, p{
+    font-family: Outfit;
+    color: var(--rich-black);
+    margin-top: 2px;
+}
+
+.left-p{
+    padding-left: 1em;
 }
 
