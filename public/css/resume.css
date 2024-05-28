@@ -1,0 +1,76 @@
+/* Colour Scheme Variables */
+:root{
+    --rich-black: #01161eff;
+    --midnight-green: #124559ff;
+    --air-force-blue: #598392ff;
+    --ash-gray: #aec3b0ff;
+    --beige: #eff6e0ff;
+}
+
+/*navigation buttons*/
+.nav-buttons{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5px;
+    justify-content: space-between;
+}
+
+.zoom-button{
+    font-family: Outfit;
+    letter-spacing: 0.05em;
+    font-size: 1.5em;
+    color: var(--midnight-green);
+    text-decoration: underline 0.1em rgba(0, 0, 0, 0);
+
+}
+
+.zoom-button:hover{
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out 0.05s text-decoration-color 300ms;
+    text-decoration-color: var(--midnight-green);
+}
+
+/*Get page resume look*/
+#resume-square{
+    margin-top: 50px;
+    max-width: 75%;
+    min-width: 25%;
+    height: 3000px;
+    margin-inline: auto;
+    outline: 3px solid black;
+    box-shadow: -10px -15px 50px 4px var(--air-force-blue);
+}
+
+#resume-leftsquare{
+    max-width: 30%;
+    min-width: 5%;
+    height: 3000px;
+    background-color: var(--beige);
+}
+
+/*Resume contents*/
+h1{
+    font-size: 5em;
+    letter-spacing: 0.05em;
+    font-weight: 60em;
+    font-family: Outfit;
+    padding-left: 2%;
+    color: var(--midnight-green);
+    margin: 0;
+    text-shadow: -2px -1px var(--rich-black), 1px 2px var(--rich-black), 2px 1px var(--rich-black), -1px -2px var(--rich-black);
+}
+
+h2.left-text{
+    font-size: 2em;
+    letter-spacing: 0.05em;
+    font-weight: 20em;
+    font-family: Outfit;
+    padding-left: 2%;
+    color: var(--rich-black);
+    padding-top: 10px;
+    margin: 0;
+}
+
