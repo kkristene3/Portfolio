@@ -38,15 +38,18 @@
     margin-top: 50px;
     max-width: 75%;
     min-width: 40%;
-    height: 1400px;
+    height: auto;
+    overflow: hidden;
     margin-inline: auto;
     box-shadow: -10px -15px 50px 4px var(--air-force-blue);
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 8em;
 }
 
 #resume-leftsquare{ /*Green, left section of the resume*/
     max-width: 35%;
     min-width: 5%;
-    height: 100%;
     background-color: var(--beige);
     float: left;
 }
@@ -54,9 +57,7 @@
 #main-resume{ /*(Right, white section of the resume*/
     max-width: 65%;
     min-width: 10%;
-    height: 100%;
     float: right;
-    
 }
 
 /*top right section div*/
@@ -81,6 +82,10 @@
 /*Divs for sections of the main resume content that need additional space after them*/
 .resume-section{
     margin-bottom: 15px;
+}
+
+.empty-space{
+    height: 2em;
 }
 
 /*Resume contents*/
