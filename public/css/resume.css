@@ -33,14 +33,13 @@
     text-decoration-color: var(--midnight-green);
 }
 
-/*Get page resume look*/
+/*Resume outline (div sections and overal look)*/
 #resume-square{
     margin-top: 50px;
     max-width: 75%;
     min-width: 40%;
     height: 3000px;
     margin-inline: auto;
-    outline: 3px solid black;
     box-shadow: -10px -15px 50px 4px var(--air-force-blue);
 }
 
@@ -49,26 +48,26 @@
     min-width: 5%;
     height: 100%;
     background-color: var(--beige);
-    padding: 0, 1em, 5em, 0;
     float: left;
 }
 
-#main-resume{
+#main-resume{ /*(Right, white section of the resume*/
     max-width: 65%;
     min-width: 10%;
     height: 100%;
-    padding: 0, 1em, 1em, 0;
     float: right;
     
 }
 
-#uOttawa-image{
+/*top right section div*/
+#uOttawa-logo{
     height: 195px;
 }
 
-#uOttawa-imageImg{
+/*Actual uOttawa image*/
+#uOttawa-image{
     width: 40%;
-    padding-top: 10%;
+    padding-top: 40px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -78,40 +77,64 @@
     width: 80%;
 }
 
+/*Divs for sections of the resume that need additional space after them*/
+.resume-section{
+    margin-bottom: 15px;
+}
+
 /*Resume contents*/
+
+/*Main title (name)*/
 h1{
     font-size: 5em;
     letter-spacing: 0.05em;
     font-weight: 60em;
     font-family: Outfit;
-    padding-left: 2%;
+    padding-left: 5%;
     color: var(--midnight-green);
     margin: 0;
     text-shadow: -2px -1px var(--rich-black), 1px 2px var(--rich-black), 2px 1px var(--rich-black), -1px -2px var(--rich-black);
 }
 
-h2.left-text{
+/*Subtitles*/
+h2{
     font-size: 2em;
     letter-spacing: 0.05em;
-    font-weight: 20em;
     font-family: Outfit;
-    padding-left: 2%;
-    color: var(--rich-black);
+    padding-left: 5%;
     padding-top: 10px;
     margin: 0;
 }
 
-ul.left-side-list{
-    padding-right: 2em;
+.left-section-title{
+    color: var(--rich-black); 
+}
+
+.main-resume-section-title{
+    color: var(--air-force-blue);
+    font-weight: normal;
+}
+
+/*Resume lists and text*/
+.left-side-list{
+    padding-right: 3em;
 }
 
 ul, p{
     font-family: Outfit;
     color: var(--rich-black);
-    margin-top: 2px;
+    margin: 2px 0px 0px 2px;
 }
 
-.left-p{
-    padding-left: 1em;
+.main-resume-list{
+    padding-left: 11%;
+    padding-right: 5%;
 }
 
+p{
+    padding-left: 8%;
+}
+
+.year{
+    padding-left: 5%;
+}
