@@ -133,6 +133,10 @@ a:hover{
     padding: 25px;
 }
 
+.project2-imgs{
+    border-radius: 10px;
+}
+
 #project2-title {
     margin-top: 0;
     text-align: left;
