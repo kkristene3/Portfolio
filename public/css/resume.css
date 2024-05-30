@@ -33,17 +33,17 @@
     text-decoration-color: var(--midnight-green);
 }
 
-/*Resume outline (div sections and overal look)*/
+/*Resume outline (div sections and overall look)*/
 #resume-square{
     margin-top: 50px;
     max-width: 75%;
     min-width: 40%;
-    height: 3000px;
+    height: 1400px;
     margin-inline: auto;
     box-shadow: -10px -15px 50px 4px var(--air-force-blue);
 }
 
-#resume-leftsquare{
+#resume-leftsquare{ /*Green, left section of the resume*/
     max-width: 35%;
     min-width: 5%;
     height: 100%;
@@ -73,11 +73,12 @@
     margin-right: auto;
 }
 
+/*Line under uOttawa image*/
 .resume-separator{
     width: 80%;
 }
 
-/*Divs for sections of the resume that need additional space after them*/
+/*Divs for sections of the main resume content that need additional space after them*/
 .resume-section{
     margin-bottom: 15px;
 }
@@ -117,7 +118,7 @@ h2{
 
 /*Resume lists and text*/
 .left-side-list{
-    padding-right: 3em;
+    padding-right: 5%;
 }
 
 ul, p{
