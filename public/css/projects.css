@@ -40,6 +40,15 @@ hr {
     border-radius: 10px;
 }
 
+.vertical-hr {
+    border-left: 3px solid var(--ash-gray);
+    height: 100%;
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
 a{
     text-decoration: none;
     color: var(--midnight-green)
@@ -129,7 +138,6 @@ a:hover{
 #project2 {
     background-color: var(--air-force-blue);
     text-align: center;
-    border-radius:  0 0 25px 25px;
     padding: 25px;
 }
 
@@ -164,6 +172,83 @@ a:hover{
 #project2-conclusion-text {
     padding: 2%;
     margin: auto;;
+}
+
+/* Wordle Project styles */
+#wordle {
+    background-color: var(--rich-black);
+    padding: 25px;
+    border-radius:  0 0 25px 25px;
+}
+#wordle-title{
+    color: var(--beige);
+    text-shadow: 2px 2px 3px var(--midnight-green);
+    text-align: center;
+}
+
+.motto {
+    color: var(--air-force-blue);
+    text-align: center;
+    text-decoration: wavy;
+    margin: 0;
+    font-size: medium;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease;um;
+}
+
+.motto:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.wordle-span {
+    background-color: #787c7f;
+    margin: 5px;
+    padding: 1%;
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: normal;
+}
+
+.green {
+    background-color: #6ca965;
+    margin: 5px;
+    padding: 1%;
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: normal;
+}
+
+.yellow {
+    background-color: #c8b653;
+    margin: 5px;
+    padding: 1%;
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: normal;
+}
+
+.wordle-description {
+    color: var(--ash-gray);
+    align-content: center;
+    flex: 1;
+    padding: 2%;
+}
+
+#wordle-technical {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    align-items: center;
 }
 
 /* Back to top button */
