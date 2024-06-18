@@ -13,6 +13,11 @@ body {
     font-family: Outfit;
 }
 
+.vertical-hr {
+    border-left: 3px solid var(--ash-gray);
+    height: 100%;
+    margin: 0 20px;
+}
 h1 {
     font-size: 2.8em;
     letter-spacing: 0.15em;
@@ -40,21 +45,17 @@ hr {
     border-radius: 10px;
 }
 
-.vertical-hr {
-    border-left: 3px solid var(--ash-gray);
-    height: 100%;
-    position: absolute;
-    left: 50%; 
-    transform: translateX(-50%);
-    border-radius: 10px;
-}
-
-a{
+#alex-link{
     text-decoration: none;
     color: var(--midnight-green)
 }
 
-a:hover{
+#wordle-link{
+    text-decoration: none;
+    color: var(--air-force-blue)
+}
+
+#alex-link:hover, #wordle-link:hover{
     text-decoration: underline;
 }
 
@@ -180,6 +181,7 @@ a:hover{
     padding: 25px;
     border-radius:  0 0 25px 25px;
 }
+
 #wordle-title{
     color: var(--beige);
     text-shadow: 2px 2px 3px var(--midnight-green);
@@ -193,7 +195,7 @@ a:hover{
     margin: 0;
     font-size: medium;
     opacity: 0;
-    transition: visibility 0s, opacity 0.5s ease;um;
+    transition: visibility 0s, opacity 0.5s ease;
 }
 
 .motto:hover {
@@ -246,9 +248,18 @@ a:hover{
 
 #wordle-technical {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    position: relative;
-    align-items: center;
+}
+
+.wordle-technical-descriptions {
+    max-width: min-content;
+    padding: 2%;
+}
+
+.wordle-imgs {
+    width: 300px;
+    height: 400px;
 }
 
 /* Back to top button */
