@@ -246,7 +246,7 @@ hr {
     padding: 2%;
 }
 
-#wordle-technical {
+.wordle-technical {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
