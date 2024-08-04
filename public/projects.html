@@ -25,7 +25,7 @@
 <body>
     <!-- Nav buttons -->
     <div class="nav-buttons">
-        <a class="zoom-button" href="../index.html"> Home</a>
+        <a class="zoom-button" href="index.html"> Home</a>
         <a class="zoom-button" href="resume.html">Resume </a>
     </div>
 
@@ -100,12 +100,12 @@
         <!-- Summary -->
         <div id="wordle-summary">
             <p class="wordle-description">This Wordle game was created as part of the course CSI 3140 at University of Ottawa.<br>
-                HTML, CSS and JavaScript were used to create the game.<br>
+                Version 1 of Wordle was created using HTML, CSS and JavaScript. Version 2 was elevated by incorporating PHP through the usage of AJAX calls. Thus allowing for partial screen updates to occur.<br>
                 Similar to the New York Times Wordle game, the player is given 6 chances to guess the correct five-letter word. 
             </p>
         </div>
         <hr>
-        <div id="wordle-technical">
+        <div class="wordle-technical">
 
             <div class="wordle-technical-descriptions">
                 <img src="imgs/WordleProject/guesses.png" class="wordle-imgs">
@@ -115,15 +115,90 @@
             </div>
 
             <div class="wordle-technical-descriptions">
-                <!-- ADD AN IMAGE HERE -->
                 <img src="imgs/WordleProject/correct-answer.png" class="wordle-imgs">
                 <p class="wordle-description">When the player guesses the correct word, an alert appears with their congratulations message.</p>
             </div>
         </div>
 
-        <p class="wordle-description">To play the game for yourself, visit this link: 
-            <span><a id="wordle-link" href="https://kkristene3.github.io/Wordle/" target="_blank">Wordle</a></span>
+        <div class="wordle-technical">
+            <div class="wordle-technical-descriptions">
+                <img src="imgs/WordleProject/scoreboard.png" class="wordle-imgs">
+                <p class="wordle-description">Users can keep track of their top 10 scores by viewing the scoreboard.</p>
+            </div>
+            <div class="wordle-technical-descriptions">
+                <img src="imgs/WordleProject/playagain.png" class="wordle-imgs">
+                <p class="wordle-description">After either guessing the Wordle or running out of guesses, the player is given the option to play again by clicking the 'PLAY AGAIN?' button.</p>
+            </div>
+        </div>
+
+        <p class="wordle-description">To play the game for yourself, visit either link:<br>
+                If you open the link using a browser, visit: <span><a id="wordle-link" href="https://kkristene3.github.io/Wordle/" target="_blank">Wordle Version 1</a></span>
+                <br>If you open the link using a server, visit: <span><a id="wordle-link" href="http://localhost:4000/" target="_blank">Wordle Version 2</a></span>          
         </p> 
+     </section>
+
+     <!--Emergency Waitlist-->
+     <section id="emergency_waitlist">
+        <h1 id="ew">EMERGENCY WAITLIST</h1>
+
+        <!--Summary-->
+        <div id="ew-summary">
+            <p class="ew-description">
+                This emergency waitlist application was created as part of the course CSI 3140 at University of Ottawa.<br>
+                The purpose of this project was to create an application using all the skills learned in class: HTML, CSS, JavaScript, PHP (with AJAX calls) and a Postgres Database.<br>
+                The application is hoping to emulate the process of a hospital emergency room waitlist, with patient and staff accounts having their respective necessary features.
+            </p>
+            <hr>
+        </div>
+
+        <div class="ew-technical">
+            <div class="ew-technical-description">
+                <p class="ew-description">
+                    Upon opening the application, users are met with a login screen where they can either choose to log in as a patient or a staff member.
+                </p>
+                <img src="imgs/EmergencyWaitlistProject/homepage.png" class="ew-imgs" width="50%">
+                <hr>
+            </div>
+
+        </div>
+
+        <div class="ew-technical">
+            <h3>PATIENT ACCOUNT</h3>
+            <img src="imgs/EmergencyWaitlistProject/patient-page.png" class="ew-imgs" width="50%">
+            <div class="ew-technical-descriptions">
+                <p>As a client, the user can see their account info and their spot on the waitlist with their estimated wait time. They also have the option of removing themselves from the waitlist to leave.</p>
+                <hr>
+            </div>
+        </div>
+
+        <div class="ew-technical">
+            <h3>STAFF ACCOUNT</h3>
+            <img src="imgs/EmergencyWaitlistProject/staff-page.png" class="ew-imgs" width="50%">
+            <div class="ew-technial-descriptions">
+                <p>As a staff member, the user can see the information and waitlist placements/wait times of every patient in the emergency waitroom.</p>
+            </div>
+        </div>
+
+        <div class="ew-technical-group">
+            <div class="ew-technical-group-descriptions">
+                <img src="imgs/EmergencyWaitlistProject/staff-actions.png" class="ew-imgs">
+                <p>They also have two buttons options: adding and removing patients.</p>
+            </div>
+
+            <div clas="ew-technical-group-descriptions">
+                <img src="imgs/EmergencyWaitlistProject/add-patient.png" class="ew-imgs">
+                <p>After choosing the add patient button, the staff can write in the patient's account information and click add patient to add them to the waitlist.</p>
+            </div>
+
+            <div class="ew-technical-group-descriptions">
+                <img src="imgs/EmergencyWaitlistProject/remove-patient.png" class="ew-imgs">
+                <p>After choosing the remove patient button, the staff must simply type in the patient's user id and click remove patient to remove them from the waitlist.</p>
+            </div>
+        </div>
+
+        <div class="ew-technical">
+            <p>If you have it running on port 4000, you can access the waitlist at <span><a id="wordle-link" href="http://localhost:4000/" target="_blank">Emergency Waitlist</a></span></p>
+        </div>
      </section>
 </body>
 </html>
