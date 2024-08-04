@@ -262,6 +262,12 @@ hr {
     height: 400px;
 }
 
+.ewPic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Back to top button */
 .top {
     position: fixed;
