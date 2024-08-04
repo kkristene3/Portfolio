@@ -179,7 +179,6 @@ hr {
 #wordle {
     background-color: var(--rich-black);
     padding: 25px;
-    border-radius:  0 0 25px 25px;
 }
 
 #wordle-title{
@@ -262,7 +261,23 @@ hr {
     height: 400px;
 }
 
-.ewPic {
+#emergency_waitlist{
+    background-color: var(--beige);
+    padding: 25px;
+    border-radius:  0 0 25px 25px;
+}
+
+.ew-description{
+    align-content: center;
+    flex: 1;
+    padding: 2%;
+}
+
+.ew-technical-group-descriptions{
+    padding-bottom: 2%;
+}
+
+.ew-imgs {
     display: block;
     margin-left: auto;
     margin-right: auto;
